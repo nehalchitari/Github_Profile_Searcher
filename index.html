@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Github Profile Searcher | Rachit Pal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Github Profiles</title>
   </head>
+
   <body>
-    <form class="user-form" id="form">
-      <input
-        type="text"
-        id="search"
-        autocomplete="off"
-        placeholder="Search a Github User"
-      />
+    <form id="form">
+      <input type="text" id="search" placeholder="Enter User Id" />
     </form>
-    <main id="main"></main>
+    <main id="main">
+      <!-- dynamically populate your card here. -->
+    </main>
+    <script src="main.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
-      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
   </body>
 </html>

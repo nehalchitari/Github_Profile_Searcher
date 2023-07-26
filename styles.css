@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center elements vertically */
+    min-height: 100vh; /* Set a minimum height to ensure the content fills the screen */
+    background-color: whitesmoke;
+  }
+  
+  #form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row; /* Display elements inside the card in a row */
+    background-color: rgb(95, 87, 87);
+    width: 500px; /* Set the width of the card */
+  }
+  
+  .card img {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Add space between the image and user details */
+  }
+  
+  .card-details {
+    flex: 1; /* Use all available space for user details */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    color: white;
+  }
+  
+  .card h2 {
+    margin: 0;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 500px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+    }
+    .user-form {
+      max-width: 400px;
+    }
+  }
+  
